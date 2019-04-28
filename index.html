@@ -4,13 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Fowl Season for Waterfowlers</title>
+    <title>A Fowl Season for Waterfowlers</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+  
 
-<!-- Bootstrap CSS link -->
+    <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<!-- Customized Google fonts -->
-<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:400,700" rel="stylesheet">
+  <!-- Customized Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:400,700" rel="stylesheet">
 
   <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
@@ -19,7 +21,7 @@
 
     <!-- Navigation starts here -->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-          <a class="navbar-brand" href="http://mediaschool.indiana.edu/j362-bllayton-spring18/">J362</a>
+          <a class="navbar-brand" href="https://sites.mediaschool.indiana.edu/j520-bllayton-spring19/">J362</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,16 +32,19 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href=mailto:putyournamehere@something.com>Contact me</a>
+                <a class="nav-link" href=mailto:eric.j.blom+fowl@gmail.com>Contact me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#video">Video</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#chart">Graph</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#audio">Audio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#map">Map</a>
               </li>
             </ul>
           </div>
@@ -48,45 +53,70 @@
         <main class="container">
           <figure>
             <img src="images/sunset_geese.jpg" alt="students">
-            <figcaption>This is where your figcaption goes. To target it in CSS, your selector is figcaption. I set up a style using the Raleway typeface you will adjust with your own typeface.</figcaption>
+            <figcaption>Canada geese fly into Lake Shakamak in late February. Most waterfowl migrated too late for Indiana hunters.
+              <span class="photo-credit">Photo by Eric Blom</span>
+            </figcaption>
           </figure>
           <div class="intro">
-            <h1>Headline (selector is h1) <br>styled as Roboto</h1>
-            <p class="lead">Use the ".lead" selector to target this text in your template. This should be an easy-to-read type introduction. This template uses Raleway, but you should customize it.</p>
-            <p class="byline">By Student Name</p>
+            <h1>A Fowl Season for Waterfowlers</h1>
+            <p class="lead">Last year, Monroe Reservoir hunters harvested a quarter of the waterfowl they broguht home the year before.</p>
+            <p class="byline">By Eric Blom</p>
           </div><!--this div closes the .intro div-->
         <div class="row">
           <div class="col-md-2">
             <p class="sidebar">You can use this left-side space for small photos, a quoteout or small sidebar information.You can use this left-side space for small photos or small sidebar information.</p>
           </div>
           <div class="col-md-8">
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it. This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
-            <div class="card" style="width: 18rem;">
-              <div class="card-body">
-                <img src="images/audio-interview.png" alt="sam house image">
-                <h5 class="card-title">Audio interview hed</h5>
-                <p class="card-text">You can use Bootstrap and a bit of inline styling "width: 18rem;" to create this. The audio tag is an html5 tag that provides the "skin" of the audio player. That includes the play and volume buttons.</p>
-                <audio controls>
-                  <source src="images/kersey_profile_.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                </audio>.
-              </div>
-            </div>
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p><p>This is where you will start your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
-            <p>This is where you will start your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
+            <p>It was obvious to a wildlife manager.</p>
+            <p>"There were less birds moving at specific times, and when they did move, they moved through fairly quickly," said Department of Natural Resources Monroe Reservoir Wildlife Biologist Rex Watters said in an interview.</p>
+            <p>A man sitting a duck blind could see it too.</p>
+            <p>"It became apparent fairly apparent you're going to sit out there and stare at a blank blue sky quite a lot," said local hunter Bill Kersey said in an interview.</p>
+            <p>The waterfowl season at Monroe Reservoir was bad last year. Few ducks, geese and other birds came through the area, and hunters did not have much success. The numbers make it clear too.</p>
+            <p>The DNR manages Monroe Reservoir's Stillwater and Northfork marshes for waterfowl hunting and collects harvest reports from hunters.</p>
+            <p>Hunters killed 701 waterfowl there in the hunt season starting in fall 2017. In 2018, they got 994. Last year, however, they only took home 271. The number was a 73-percent drop from one year to the next.</p>
 
             <figure id="video">
               <iframe width="100%" height="400" src="https://www.youtube.com/embed/1whso7Mw79A" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <!-- <iframe width="100%" height="400" src="https://www.youtube.com/embed/HUvVa7s_GV4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-              <figcaption>This is where you will place your explanation for the video.
+              <figcaption>Monroe Reservoir marshes were full of geese after the hunting season was over. During it, however, the birds were no where to be seen. <span class="photo-credit">Video by Eric Blom</span>
               </figcaption>
             </figure>
+            <p>Stillwater and Northfork marshes are popular areas with Monroe County hunters. </p>
+            <p>Normally cold snaps up north in the fall send waterfowl on their migrations through Indiana. Low temperatures, however, did not come, and Monroe County saw fewer brids.</p>
+            <p>The DNR keeps the marshes closed to any human activity from March through April, except for a half-day hunts every three days during the 70-day waterfowl season.</p>
+            <p>"In those areas our hunts are mostly afternoon hunts, so we start hunting at noon and stop at sunset," Watters said.</p>
+            <p>The DNR also only allows waterfowlers to hunt from about two-dozen locations in the marshes. Most of those are equipped with permanent blinds, cement structures with camouflaged roofs and large slots from which to shoot. On days the marshes are open, hunters draw lots to pick blinds.</p>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <img src="images/brian_cropped.jpg" alt="Brian waits in blind.">
+                <h5 class="card-title">Brian Gets 'Em</h5>
+                <p class="card-text">Brian is 12--old for a black Labrador--but he still is his owner's favorite part about waterfowl hunting. <span class="photo-credit">Audio story by Eric Blom</span></p>
+                <audio controls>
+                  <source src="images/kersey_profile_.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
 
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p><p>This is where you will start your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
+            <h2>Weather is the Why</h2>
+            <p>There is a consensus on why the season was poor as well. The reason was the weather.</p>
+            <p>"They just didn't migrate down from Minnesota and Wisconsin and all that," Kersey said. "It just never got cold enough to push them out."</p>
+            <p>Some waterfowl live on Monroe Reservoir year-round, but the lake gets big numbers when birds migrate through, Watters said.</p>
+            <p>"That they never ran into the hard freezing, 'I've got to go someplace else to find food' situations in Minnesota, and many of the other northern areas kept those birds from migrating south as they normally would have," he said.</p>
+            <p>Waterfowl are predictable creatures, Kersey said.</p>
+            <p>Some birds do not follow the weather, however. Blue-winged teal, a duck species, migrate based on the length of day rather than weather, Watters said. They know to fly south when the days get shorter. They migrate farther than others, all the way to Central and even South America, so they must start earlier than other species, Watters said.</p>
+
+
+              <figure class="card" id="chart-card">
+                <div id="chart" ></div>
+                 <figcaption>Last year, hunters harvested only a fraction of the waterfowl they did in the two years prior. Data from the Department of Natural Resources also shows ducks are by far the most common birds taken. <span class="photo-credit"> Chart by Eric Blom</span>
+              </figcaption>
+              </figure>
+             
+
+            <h3>Numbers</h3>
+            <p>Last year was a poor season for all the waterfowl species DNR tracks. Hunters took 259 ducks, down from 969 in 2017 and 669 in 2016. Waterfowlers got 12 geese last year versus 17 and 20 in 2017 and 2016. They harvested seven mergansers and one coot in 2017, five mergansers and seven coots in 2016 and none of either species in 2018.</p>
+            <p>Coots are dark gray waterfowl about two-thirds the size of a mallard duck, according to the Cornell Ornithology Lab. Their beaks are more pointed, and their feet have lobes rather than webbing to help propel them swim. </p>
+            <p>Mergansers are large ducks, according to the Cornell Ornithology Lab. The males have black heads and white bodies, while females have brown, tufted heads and light gray bodies.</p>
 
             <figure>
               <figcaption><span class="maphead">Your data map headline will go here</span><br>
@@ -108,11 +138,42 @@
           </div><!--closes 2-col sidebar material div-->
 
           <div class="col-md-8">
-              <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p><p>This is where you will start your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
-            <p>This is where you will run your story. Since you have specified your body copy style to be Georgia, all your body copy will have that unless you overwrite it.</p>
+            <h3>Hunters like hunting</h3>
+            <p>Many Monroe County residents might not notice if birds migrate at unusual times. For hunters, however, the disruption can ruin a rewarding experience with friends and family.</p>
+            <p>Kersey got his start hunting when in 1973 when he was about 11 years old. His dad took him.</p>
+            <p>"We didn't shoot anything, but he flushed a quail and shot at it and I remember, I remember that like, 'I don't know what this is, but I love it.' And I've been doing it ever since," he said.</p>
+            <p>Kersey is a training manager for Indiana University Facilities Operations.</p>
+            <p>Since then, he has hunted across the U.S. from the Rocky Mountains to Maine for turkeys, deer, moose and more. Waterfowl hunting is special to him, however.</p>
+            <p>"There's a real comradery with it that you don't--that is hard to find in deer camps or deer hunting or a lot of other hunting that you're just doing it by yourself," he said.</p>
+            <p>Kersey savors the time sitting in a blind waiting for birds to show up.</p>
+            <p>"You get to talk and drink coffee and commiserate your aging body and talk about kids and family and work and all that," he said. "It's a really nice way to do it."</p>
+
           </div><!--closes 8-col main story div-->
           <div class="col-md-2">
             <p class="sidebar">This right side space is where you can use small photos, a quote or sidebar information.</p>
+          </div><!--closes 2-col sidebar material div-->
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+              <p class="sidebar"></p>
+          </div><!--closes 2-col sidebar material div-->
+
+          <div class="col-md-4">
+              <h3>Managing the Reservoir</h3>
+              <p>The poor season at Monroe Reservoir comes despite the DNR's efforts to attract ducks to Stillwater and Northfork marshes. </p>
+              <p>Along with restricting hunting, the agency uses dykes to keep the areas flooded during the hunt season, Watters said. When the ground is dry in the summer, the DNR also plants corn for the birds. When the marshes flood, the birds can swim up and eat the ears. Even bare stalks provide a home for microorganisms.</p>
+              <p>"Those birds coming in the spring migration heading north will be able to feed on all of that food growing on the stalk of the corn," Watters said.</p>
+              <p>Despite all of it, however, hunters still must count on the weather cooperating next year if they want a good season. Kersey for one, is hoping for a cold winter.</p>
+              <p>"One that starts in mid-November, freezes up in Minnesota and Wisconsin and Michigan and the first two weeks of December pushes birds down like they're supposed to, and that's really all I want," he said.</p>
+            </div>
+            <div class="col-md-4 data-box">
+              <h4>Behind the Data</h4>
+              <p>The numbers in this story came from about 1,300 harvest reports. Hunters have to tell the DNR how many and what type of animals they kill each day in a paper report. The DNR compiled those for each day and each hunt location in the Stillwater and Northfork marshes.</p>
+              <p>The DNR provided those records and a map of hunt locations on paper. The author compiled the report in a spreadsheet and used aerial imagery to find coordinates for the hunt locations to analyze the data and produce the map included in the story. </p>
+              <p>
+           </div><!--closes 8-col main story div-->
+        <div class="col-md-2">
+          <p class="sidebar"></p>
         </div><!--closes 2-col sidebar material div-->
       </div><!--closes overall row div-->
       <hr>
@@ -127,3 +188,4 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+  <script src="index.js" type="text/javaScript"></script>
