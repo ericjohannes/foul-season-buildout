@@ -5,7 +5,7 @@ var positionInfo = element.getBoundingClientRect();
 // var h = positionInfo.height;
 var w = positionInfo.width;
 
-var margin = {top: 20, right: 20, bottom: 40, left: 40};
+var margin = {top: 20, right: 20, bottom: 50, left: 60};
 
 var width = w - margin.left - margin.right,
     height = (w * 2/3) - margin.top - margin.bottom;
@@ -41,7 +41,7 @@ d3.csv("data/bird_totals.csv", function(error, data) {
     .domain([0, d3.max(dataset, function(d) {  return d3.max(d, function(d) { return d.y0 + d.y; });  })])
     .range([height, 0]);
 
-  var colors = ["#1b9e77", "#d95f02", "#7570b3", "#e7298a"];
+  var colors = ["#428000", "#d95f02", "#5f4690", "#e7298a"];
 
 
 
@@ -71,7 +71,7 @@ d3.csv("data/bird_totals.csv", function(error, data) {
   // add axes labesl
   svg.append("text")
     .attr("class", "label")
-    .attr("y", height + 30)
+    .attr("y", height + 40)
     .attr("x", width/2)
     .style("text-anchor", "middle")
     .text("Hunt Year")
