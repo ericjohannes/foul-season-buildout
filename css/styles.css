@@ -4,13 +4,13 @@
 // No media query for `xs` since this is the default in Bootstrap*/
 
 nav {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: 'Montserrat', "Lucida Grande", sans-serif;
   font-weight: 400;
 }
 
 body {
   padding-top: 5rem;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: 'Merriweather', Georgia, serif;
 }
 p {
   text-align: justify;
@@ -20,7 +20,8 @@ p {
   text-align: center;
 }
 h1, h2{
-  font-family: Bookman, URW Bookman L, serif;
+  font-family: 'Lora', serif;
+  font-weight: 700;
 }
 h1 {
   font-size: 4em;
@@ -36,19 +37,20 @@ h4{
 }
 
 .lead {
-  font-family: Bookman, URW Bookman L, serif;
+  font-family: 'Merriweather', Georgia, serif;
 	font-weight: 400;
   text-align: center;
 }
 
 .byline {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-weight: 700;
+  font-family: 'Lora', serif;
+  font-weight: 500;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .sidebar {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: 'Montserrat', "Lucida Grande", sans-serif;
   font-size: .9em;
   font-weight: 400;
 }
@@ -59,7 +61,7 @@ img {
 }
 
 .maphead {
-  font-family: Bookman, URW Bookman L, serif;
+  font-family: 'Merriweather', Georgia, serif;
   font-size: 1.8em;
   font-weight: 500;
 }
@@ -73,25 +75,25 @@ figure.figure-border {
 }
 figcaption {
   text-align: left;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: 'Montserrat', "Lucida Grande", sans-serif;
   margin-top: .25em;
   margin-bottom: 1em;
 }
 
 .card {
   float: left;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: 'Montserrat', "Lucida Grande", sans-serif;
   margin-right: 2em;
 }
 .card-title {
-  font-family: Bookman, URW Bookman L, serif;
+  font-family: 'Merriweather', Georgia, serif;
   font-weight: 700;
 }
 span.photo-credit {
   font-weight: 700;
 }
 svg {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: 'Montserrat', "Lucida Grande", sans-serif;
     shape-rendering: crispEdges;
   }
 
@@ -121,12 +123,13 @@ g.tick, g.legend {
 .data-box {
   background: #f3ffe6;
   color: #382956;
+  margin-bottom: 10px;
 }
 p.sidebar, p.sidebar-attribution, p.sidebar-head  {
   text-align: left;
 }
 p.sidebar-head {
-   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   font-family: 'Montserrat', "Lucida Grande", sans-serif;
   font-weight: 700;
 }
 
